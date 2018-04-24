@@ -1,0 +1,288 @@
+/*
+    Document   : override
+    Created on : <date>
+    Author     : <author>
+    Description:
+        This is where any of your application specific styles should be included
+*/
+oj-module:not(.oj-complete) {
+  visibility: hidden; 
+}
+
+oj-module {
+  display: block; 
+}
+
+/*
+    Document   : override
+    Created on : <date>
+    Author     : Team Outcasts
+    Description:
+        This is where any of your application specific styles should be included
+*/
+
+.header{
+	background-color: #0288d1 !important;
+	padding: 10px;
+}
+
+.logo{
+  display: inline-block;
+  width: 80px;
+  overflow: hidden;
+  direction: ltr;
+  text-align: center;
+  box-sizing: content-box;
+  height: auto;
+}
+
+.text-white{
+color: #fff !important;
+}
+
+body{
+	font-size: 20px;
+      background-color: #fff;
+    }
+      .logo{
+        display: inline-block;
+          width: 80px;
+          overflow: hidden;
+          direction: ltr;
+          text-align: center;
+          box-sizing: content-box;
+          height: auto;
+      }
+      .header{
+        padding: 10px;
+
+      }
+
+      .text-white{
+        color: #fff !important;
+      }
+
+      .text-center{
+        text-align: center;
+      }
+
+      .center-img{
+        width: 70%;
+        max-width: 200px;
+        height: auto;
+
+      }
+
+      .jumbo{
+        margin: -10px;
+        padding: 20px 20%;
+        background-color: #e5e5e5;
+      }
+
+      .gap-60{
+        height: 60px;
+        width: 100%;
+      }
+
+      .gap-50{
+        height: 50px;
+        width: 100%;
+      }
+
+      .gap-20{
+        height: 20px;
+        width: 100%;
+      }
+
+
+      .progressBar {
+        position: relative;
+        width: 80%;
+        height: 20px;
+        margin: 20px auto;
+        background-color: #efefef;
+        border-width: 0px;
+        /*border: 0px solid #fab617;*/
+        border-radius: 10px;
+        overflow: hidden;
+      }
+
+      .centered{
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .progressBar div {
+        position: relative;
+        height: 100%;
+        background-color: #0288d1;
+      }
+
+      .progressBar .progressText {
+        position: absolute;
+        margin: 0 auto;
+        top: 0px;
+        left: 0;
+        right: 0;
+        background-color: transparent;
+      }
+
+      .text-black{
+        color: #000;
+      }
+
+      .main-app-window{
+        width: 80%;
+        max-width: 600px;
+        margin: 30px auto;
+      }
+
+      .upload-group{
+        width: 80%;
+        margin-bottom: 20px;
+      }
+
+      .hidden-input{
+        width: 0.1px;
+        height: 0.1px;
+        position: absolute;
+        opacity: 0;
+        overflow: hidden;
+        z-index: -1;
+      }
+
+      .panel-header{
+        background-color: #0288d1;
+        margin: -15px;
+        width: calc(100% + 30px);
+        margin-bottom: 10px;
+        color: #fff;
+        padding: 10px;
+        text-align: left;
+        font-size: 1.4rem;
+        padding-bottom: 0;
+       
+      }
+
+      .text-primary{
+        color: #0288d1;
+      }
+
+      .panel-tab{
+        border-bottom: 2px solid #fff;
+        color: #fff;
+        /*width: */
+        /*float: left;*/
+        display: inline-block;
+      }
+
+      .panel-body{
+        height: 300px;
+        width: 100%;
+        overflow-y: scroll;
+        padding: 10px 5%;
+       text-align: left;
+      }
+
+      .panel-body::-webkit-scrollbar{
+      	width: 5px;
+      }
+
+      .hidden-input + label{
+        font-size: 1.25rem;
+        padding: 10px 15px;
+        border-radius: 50px;
+        color: #fff;
+        background-color: #0288d1;
+        display: inline-block;
+        cursor: pointer;
+        margin-bottom: 20px;
+      }
+
+      .hidden-input:focus + label, .hidden-input + label:hover{
+        background-color: #45b384;
+        outline: 1px dotted #000;
+        outline: -webkit-focus-ring-color #fff 5px;
+      }
+
+
+      .half-width{
+        width: 50%;
+        float: left;
+      }
+
+
+.text-center{
+  text-align: center;
+}
+
+.transcription-panel{
+	width: 100%;
+}
+
+.navtabs ul li a span{
+	color: #fff;
+	opacity: 1;
+	z-index: 1;
+}
+
+.oj-tabbar-horizontal:not(.oj-tabbar-icon-only) .oj-tabbar-item.oj-selected:not(.oj-hover) .oj-tabbar-item-icon{
+	color: #fff;
+}
+
+span.oj-tabbar-item-label, span.oj-tabbar-item-icon{
+	color: #fff !important;
+	text-align: left;
+}
+
+.selected{
+	border-bottom: 2.5px solid #fff;
+}
+
+.oj-contrast-marker a.oj-navigationlist-item-content .oj-navigationlist-item-label {
+    color: #0288d1;
+}
+
+div#navDrawer{
+	background-color: #e5e5e5;
+	border-right: 3px solid #fff;
+}
+
+.oj-contrast-marker .oj-navigationlist-vertical .oj-navigationlist-item{
+	padding: 10px 20px;
+}
+
+.oj-contrast-marker .oj-navigationlist-vertical .oj-navigationlist-item.oj-selected {
+    background-color: #252627;
+}
+
+.oj-navigationlist-app-level.oj-navigationlist-horizontal .oj-navigationlist-item:not(.oj-disabled) a.oj-navigationlist-item-content > .oj-navigationlist-item-label {
+    color: #fff;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+}
+
+a:active, a:hover, a:focus{
+	text-decoration: none !important;
+	color: inherit !important;
+}
+
+.oj-navigationlist-horizontal:not(.oj-navigationlist-icon-only) .oj-navigationlist-item.oj-selected {
+    border-width: 0 0 3px 0;
+    border-style: solid;
+    border-color: #fff;
+}
+
+.nobg:hover{
+	background-color: transparent;
+	border-bottom: 3px solid #fff;
+}
+
+.oj-button.oj-default.oj-button-half-chrome .oj-button-icon, .oj-button.oj-focus-only.oj-button-half-chrome .oj-button-icon {
+    color: #fff;
+}
+
+.contain-header{
+	width: 80%;
+	max-width: 250px;
+}

@@ -1,0 +1,109 @@
+<!--
+ Copyright (c) 2014, 2017, Oracle and/or its affiliates.
+ The Universal Permissive License (UPL), Version 1.0
+ -->
+<div class="oj-hybrid-padding text-center oj-sm-align-items-center jumbo">
+  
+  	<h1>Transcribe audio to text</h1>
+	  <p class="jumbotron-contents">
+	      AT is a robust solution for transcribing audio to text with the use of latest cutting edge neural networks model
+	      
+	  </p>
+	  <svg style="transform:scale(0.7);" width="105" height="68" viewBox="0 0 105 68" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+      <image width="105" height="68" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGkAAABECAYAAACCsBvSAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAGSSURBVHgB7dtRaoNAEIfxTfCCpfTBA3iOTs+RA+QpV7RtkKa0oTSrovPp93vZvAQW/8zuMOihJHE6X14/lyjlGF379FZ0cyx5xLD0UfRDppD0B0MCMCQAQwIwJABDAjAkAEMCMCQAQwJoykKmzub2PNtbspJiWEbP5mLi/7E87gAMCWCxO4ki491nJd2LYclz9xkSgCEBeCdVWuPOspLqxbAsd2ftqpKoU4u9VVIMC2tq4XEHYEgAhgRgSACzdXcZOqet7mHOSophWbVzirLBPXjcARgSQPN9hj7K74emGPO8j3V/uPL7oYmiVOmvIfW1VWEVTVL/vJuufYlSna7GGvO8bRwADAnAkAAMCWDGkG5dy4rd3zb3MNuANUOXuNU9eNwBGBLAzkLKcGfV29UrXdTpisddteWr0deMK61RjVYSgCEBGBKAId3J16bbOPySsU23kgAMCWDBkKae9cyRzhwOJYnT+fL+9btrn9PsKwOPOwBDAjAkAEMCMCQAQwIwJABDAjAkAEMCSBTSfmdz//kA0Gx2j2NARkUAAAAASUVORK5CYII="/></svg>
+
+  
+  
+</div>
+
+<div class="gap-50"></div>
+
+<div class="main-app-window text-center">
+
+
+
+	<div class="upload-group centered">
+
+		<h4> Select file to start transcribing</h4>
+
+		<div class="col-sm-6">
+			<form id="record" class="centered" enctype="multipart/form-data">
+				<input class="hidden-input centered" type="file" name="audiorecord" id="audiorecord">
+				<label for="audiorecord"><i class="fa fa-microphone text-black"> </i> Record Audio</label>
+			</form>
+		</div>
+
+		<div class="col-sm-6">
+			<form id="uploadFile" class="centered" enctype="multipart/form-data">
+				<input class="hidden-input centered" type="file" name="" id="file">
+				<label for="file"> <i class="fa fa-cloud-upload-alt text-black"> </i> Upload Audio</label>
+			</form>
+		</div>
+	</div>
+
+
+	<div data-bind="progressBar: { value : percentage }"></div>
+
+	<div id="panelPage" class="transcription-panel oj-sm-align-items-center centered">
+		<div class="oj-sm-align-items-center centered">
+		    <div class="oj-panel oj-sm-margin-2x oj-sm-align-self-center">
+		      <div class="panel-header">
+		      	<!-- this contains the tabs -->
+		      	<div class="contain-header">
+		      	<oj-tab-bar id="hnavlist" 
+		              edge="top"
+		              selection="{{selectedItem}}" class="text-white navtabs">
+		              
+		              	<ul>
+					      <li id="google">
+					        <a href="#" aria-controls="google-tab-panel" id="google-tab">
+					          
+					          Google Text
+					        </a>
+					      </li>
+					      <li id="amazon">
+							<a href="#" aria-controls="amazon-tab-panel" id="amazon-tab">
+							
+							Amazon Text
+							</a>
+						  </li>
+						</ul>
+		              
+					    
+				</oj-tab-bar>
+
+				</div>
+
+		      	<!-- <h4 class="panel-tab">
+			      	
+			    </h4> -->
+		      </div>
+
+		      <div class="panel-body">
+		      	<oj-switcher value="[[selectedItem]]">
+				     <div slot="google"
+				          id="google-tab-panel"
+				          role="tabpanel" 
+				          aria-labelledby="google-tab">
+				       <div class="demo-tab-content">
+				         <p data-bind="text: googleText"></p>
+				       </div>
+				     </div>
+				     <div slot="amazon"
+				          id="amazon-tab-panel"
+				          role="tabpanel" 
+				          aria-labelledby="amazon-tab">
+				       <div class="demo-tab-content">
+				         <p data-bind="text: amazonText"></p>
+				       </div>
+				     </div>
+		     	</oj-switcher>
+		      </div>
+		      
+		    </div>
+		   
+
+		</div>
+	</div>
+	
+</div>
